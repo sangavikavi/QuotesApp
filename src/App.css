@@ -1,0 +1,199 @@
+@font-face {
+  font-family: Nippo-Regular;
+  src: url('./assets/fonts/Nippo-Regular.otf');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: Nippo-Bold;
+  src: url('./assets/fonts/Nippo-Bold.otf');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: Nippo-Medium;
+  src: url('./assets/fonts/Nippo-Medium.otf');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: Nippo-Light;
+  src: url('./assets/fonts/Nippo-Light.otf');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+
+
+
+.App {
+  text-align: center;
+  background-color: #2B2A2A;
+  height:100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1{
+  font-family: Nippo-Medium;
+  color: #fff;
+}
+
+.container{
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteContainer{
+  width:90%;
+  height:65%;
+  padding: 20px;
+  padding-left: 40px;
+  overflow-x: hidden;
+}
+
+.quote-text{
+  font-family: Nippo-Light;
+  color:#fff;
+  font-size: 64px;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.author-name{
+  font-family: Nippo-Light;
+  width:90%;
+  text-align: right;
+  font-size: 24;
+  color:#fff
+}
+
+.btn{
+  height: 60px;
+  width: 150px;
+  border: 0;
+  margin: 40px;
+  border-radius: 10px;
+  font-family: Nippo-Regular;
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgb(1 1 1 / 0.2);
+}
+
+.btn:hover{
+  
+  box-shadow: 0 3px 20px rgb(1 1 1 / 0.2);
+}
+
+.btn:active{
+  height:57px;
+  width:147px;
+  background-color: #C5C0CC;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .quoteContainer{
+    width:90%;
+    height:55%;
+    padding: 20px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .quote-text{
+    font-size: 34px;
+    text-align: left;
+  }
+
+
+  .btn{
+    width:90%;
+    align-self: center;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .btn:active{
+    width:87%;
+    background-color: #C5C0CC;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .quoteContainer{
+    width:90%;
+    height:55%;
+    padding: 20px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .quote-text{
+    font-size: 34px;
+    text-align: left;
+  }
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .quoteContainer{
+    width:90%;
+    height:55%;
+    padding: 20px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .quote-text{
+    font-size: 44px;
+    text-align: left;
+  }
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .quoteContainer{
+    width:90%;
+    height:55%;
+    padding: 20px;
+    padding-left: 20px;
+    overflow-x: hidden;
+  }
+  
+  .quote-text{
+    font-size: 44px;
+    text-align: left;
+  }
+
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .quote-text{
+    font-size: 64px;
+    text-align: left;
+  }
+}
